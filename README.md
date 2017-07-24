@@ -1,9 +1,9 @@
 # Pong
 ##### Dylan MacKenzie
 
-This is a remake of the game Pong. This is written in JavaScript using the p5.js framework.
+This is a remake of the game Pong written in JavaScript using the p5.js framework.
 
-> [w, s] control player 1
+> [w, s] control player 1 <br>
 > [upArrow, downArrow] control player 2
 
 This game adapts to any viewport size and scales appropriately. Looking to port over to use touch controls for mobile soon.
@@ -44,14 +44,14 @@ https://dmackenz.github.io/Pong/
         this.pos.y <= p1.pos.y + p1.pheight &&
         this.pos.y >= p1.pos.y - p1.pheight) {
         this.vel.x *= -1;
-        return 0;
+        return false;
 
     // bounce on paddle 2
     } else if ((this.pos.x >= p2.pos.x - allowance && this.pos.x <= p2.pos.x + allowance) &&
                 this.pos.y <= p2.pos.y + p2.pheight &&
                 this.pos.y >= p2.pos.y - p2.pheight) {
         this.vel.x *= -1;
-        return 0;
+        return false;
     }
 
     // player 2 wins
@@ -60,7 +60,7 @@ https://dmackenz.github.io/Pong/
         p2.points++;
 
         // restart
-        return 1;
+        return true;
 
     // player 1 wins
     } else if (this.pos.x > p2.pos.x) {
@@ -68,6 +68,6 @@ https://dmackenz.github.io/Pong/
         p1.points++;
 
         // restart
-        return 1;
+        return true;
     }
 ```
