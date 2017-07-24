@@ -8,6 +8,8 @@ This is a remake of the game Pong. This is written in JavaScript using the p5.js
 
 This game adapts to any viewport size and scales appropriately. Looking to port over to use touch controls for mobile soon.
 
+https://dmackenz.github.io/Pong/
+
 # Engine
 ##### Main Loop
 ```JavaScript
