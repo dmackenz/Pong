@@ -6,7 +6,7 @@ This is a remake of the game Pong. This is written in JavaScript using the p5.js
 > [w, s] control player 1
 > [upArrow, downArrow] control player 2
 
-Looking to port over to use touch controls for mobile soon.
+This game adapts to any viewport size and scales appropriately. Looking to port over to use touch controls for mobile soon.
 
 # Engine
 ##### Main Loop
