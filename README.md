@@ -10,6 +10,8 @@ This game adapts to any viewport size and scales appropriately. Looking to port 
 
 https://dmackenz.github.io/Pong/
 
+Note that there are a couple issues with collision detection that I hope to iron out in the future.
+
 # Engine
 ##### Main Loop
 ```JavaScript
